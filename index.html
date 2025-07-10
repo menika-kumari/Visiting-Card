@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Digital Visiting Card Generator</title>
+	<link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+	<div class="container">
+		<h1>✨ Digital Visiting Card Generator ✨</h1>
+    <form id="cardForm">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="text" name="designation" placeholder="Designation" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Phone" required />
+      <input type="url" name="website" placeholder="Website" />
+      <input type="url" name="linkedin" placeholder="LinkedIn" />
+      <button type="submit">🎨 Generate Card</button>
+    </form>
+    <div id="cardPreview" class="card hidden"></div>
+    <button id="downloadBtn" class="hidden">⬇️ Download Card as Image</button>
+	</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
